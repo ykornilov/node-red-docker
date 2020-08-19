@@ -1,0 +1,25 @@
+{
+  "name": "node-red-docker",
+  "version": "1.0.0",
+  "description": "Low-code programming for event-driven applications",
+  "homepage": "http://nodered.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ykornilovyv/node-red-docker.git"
+  },
+  "main": "node_modules/node-red/red/red.js",
+  "scripts": {
+    "start": "node $NODE_OPTIONS node_modules/node-red/red.js $FLOWS",
+    "debug": "node --inspect=0.0.0.0:9229 $NODE_OPTIONS node_modules/node-red/red.js $FLOWS",
+    "debug_brk": "node --inspect=0.0.0.0:9229 --inspect-brk $NODE_OPTIONS node_modules/node-red/red.js $FLOWS"
+  },
+  "dependencies": {
+    "node-red": "1.1.3"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "keywords": ["nodered", "node-red", "ubuntu", "docker"],
+  "author": "",
+  "license": "ISC"
+}
